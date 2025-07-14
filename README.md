@@ -5,6 +5,7 @@
 - Must have Angular 17 and Node.js 22 Installed
 - To run the application, enter "ng serve -o" in the terminal.
 - It will automatically open the application in the browser, or you may access http://localhost:4200 directly
+- Remove existing local storage with key "cart" or open in incognito
 
 # FEATURES IMPLEMENTED
 - Coded in a Component,service and mock structure
