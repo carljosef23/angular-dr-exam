@@ -1,0 +1,47 @@
+<div class="cart-logo">
+  <img src="https://img.freepik.com/premium-vector/shopping-cart-icon-vector-image-can-be-used-fashion-ecommerce_120816-96479.jpg" alt="cart logo" />
+</div>
+
+<div class="cart-container" *ngIf="cart.items.length > 0; else emptyCart">
+  <div class="cart-list">
+    <div class="cart-item" *ngFor="let item of cart.items">
+      <img [src]="item.imageUrl" [alt]="item.name" class="cart-product-image" />
+      <span class="cart-product-name">{{ item.name }}</span>
+      <span class="cart-product-quantity">
+        Quantity:  
+        <input type = "number" 
+                class = "cart-quantity-input" 
+                [(ngModel)]="item.quantity"
+                (ngModelChange)="updateCartQuantity(item, item.quantity)"
+                min= "1" 
+                max="100" 
+                 />
+      </span>
+        <span class="cart-product-subtotal">
+          <ng-container *ngIf="item.discountedSubtotal !== undefined; else noDiscount">
+            <span class="discounted-price">{{ item.discountedSubtotal | currency }}</span>
+            <span class="original-price">{{ item.subtotal | currency }}</span>
+          </ng-container>
+          <ng-template #noDiscount>
+            {{ item.subtotal | currency }}
+          </ng-template>
+        </span>
+        <button class="remove" (click)="confirmRemove(item)">Remove</button>
+    </div>
+    <div class="cart-total">
+      <span></span>
+      <span></span>
+      <span><strong>Total: </strong></span>
+      <span>
+          <strong>{{ totalWithDiscount | currency }}</strong>
+      </span>
+    </div>
+    <div class="coupon-section">
+      <input type="text" [(ngModel)]="couponInput" placeholder="Enter coupon code"/> 
+      <button (click)="applyCoupon()">Apply</button>
+    </div>
+  </div>
+</div>
+<ng-template #emptyCart>
+  <div class="empty-cart">Your cart is empty.</div>
+</ng-template>

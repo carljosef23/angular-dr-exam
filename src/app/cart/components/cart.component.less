@@ -1,0 +1,148 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  border: 2px solid #bd86d7b4;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 8px #e0d1f7;
+  max-width: 600px;
+  width: 100%;
+  margin: 0;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 100px 1fr 150px 150px;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-product-image {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cart-total {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100px 1fr 150px 150px;
+  margin-top: 24px;
+  font-size: 1.0rem;
+  width: 100%;
+}
+
+.cart-total strong {
+  grid-column: 4 / 5; 
+  justify-self: end;
+}
+
+.cart-product-subtotal span {
+  vertical-align: middle;
+}
+
+.coupon-section input[type="text"] {
+  width: 160px;
+  height: 36px;
+  border: 1.5px solid #bd86d7b4;
+  border-radius: 6px;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 1rem;
+  color: #7c2ae8;
+  background: #f8f3ff;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.coupon-section input[type="text"]:focus {
+  border-color: #7c2ae8;
+}
+
+.coupon-section button {
+  background: #f3e9ff;
+  color: #7c2ae8;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.coupon-section button:hover,
+.coupon-section button:focus {
+  background: #d1b3ff;
+  outline: none;
+}
+
+.remove {
+  background: #f3e9ff;
+  color: #7c2ae8;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  margin-top: 8px;
+  margin-left: 2px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.remove:hover,
+.remove:focus {
+  background: #d1b3ff;
+  outline: none;
+}
+
+.cart-quantity-input {
+  width: 60px;
+  text-align: center;
+  border: 1.5px solid #bd86d7b4;
+  border-radius: 6px;
+  height: 25px;
+  margin-right: 12px;
+  font-size: 1rem;
+  color: #7c2ae8;
+  background: #f8f3ff;
+}
+
+.cart-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0 24px 0;
+}
+
+.cart-logo img {
+  height: 180px; 
+}
+
+.original-price {
+  font-size: 0.9em;
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+.discounted-price {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 1.5em;
+  color: #555;
+  margin-top: 50px;
+}

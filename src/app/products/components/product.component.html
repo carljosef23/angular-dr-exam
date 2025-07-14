@@ -1,0 +1,18 @@
+    
+<div class="product-container">  
+    <div 
+        class="product-item" *ngFor="let product of products">
+        <img [src]="product.imageUrl" alt="{{product.name}}" />
+        <span class="product-name">{{product.name}}</span>
+        <span class="product-price">{{product.price | currency}}</span>
+        <div>
+            <input #quantityInput 
+                type="number" 
+                class="product-quantity"
+                placeholder="0"
+                min="0"
+                max="100"/>
+            <button (click)="addToCart(+quantityInput.value,product)" class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</div> 

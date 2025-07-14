@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "IVE I'VE IVE Album",
+            "price": 50.00,
+            "imageUrl": "https://i.pinimg.com/736x/4c/2a/11/4c2a119fd23dce16f050f605c9fed9f4.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Lesserafim Fearless Album",
+            "price": 40.00,
+            "imageUrl": "https://i.pinimg.com/1200x/a4/84/86/a4848697ab14faa5baeb7df9f6be397f.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Lesserafim Easy Album",
+            "price": 35.00,
+            "imageUrl": "https://i.pinimg.com/1200x/2e/8d/e0/2e8de0e705b349ed09142adcb5cb1157.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Aespa My World Album",
+            "price": 30.00,
+            "imageUrl": "https://i.pinimg.com/1200x/d0/4d/12/d04d12211353c4e745fd7486c8c70995.jpg"
+        },
+        {
+            "id": 5,
+            "name": "NewJeans GetUp Album",
+            "price": 70.00,
+            "imageUrl": "https://i.pinimg.com/1200x/51/d3/d5/51d3d5e3d70339f054ecba39151bab81.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Enhyphen Desire Unleash Album",
+            "price": 20.00,
+            "imageUrl": "https://i.pinimg.com/1200x/ef/ce/a9/efcea9f74f8465558b5c5aa21957f5c0.jpg"
+        },
+        {
+            "id": 7,
+            "name": "BTS Map of the Soul 7 Album",
+            "price": 55.00,
+            "imageUrl": "https://i.pinimg.com/736x/ee/a5/8d/eea58d46cb9b7639b989bb17253994d3.jpg"
+        },
+        {
+            "id": 8,
+            "name": "TWICE Between 1&2 Album",
+            "price": 15.00,
+            "imageUrl": "https://i.pinimg.com/1200x/34/d6/3c/34d63cad509770d41d1ff7b5d937e09d.jpg"
+        }
+    ]
+}
